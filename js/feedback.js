@@ -34,12 +34,12 @@ $(document).ready(function() {
         },
         duration: 600
       });
-    });
-    $('.radio-group .radio').click(function(){
-      $(this).parent().find('.radio').removeClass('selected');
-      $(this).addClass('selected');
-    });
-    $(".submit").click(function(){
-      return false;
-    });
   });
+  $('.radio-group .radio').click(function(){
+    $(this).parent().find('.radio').removeClass('selected');
+    $(this).addClass('selected');
+  });
+  $(".submit").click(function(){
+    return false;
+  });
+});
