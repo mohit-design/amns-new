@@ -200,103 +200,52 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 }
 .menu-img-info-mfp > a {
 	border: 2px solid #00bcd4;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
+	border-radius: 14px;
+	-webkit-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-moz-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-ms-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-o-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+}
+.menu-img-info-mfp > a:hover {
+	background-color: rgb(0 188 212 / 10%);
 }
 .menu-img-info-mfp > a > p {
 	background-color: #00bcd4;
+	-webkit-border-radius: 0 0 14px 14px;
+	-moz-border-radius: 0 0 14px 14px;
+	-ms-border-radius: 0 0 14px 14px;
+	-o-border-radius: 0 0 14px 14px;
+	border-radius: 0 0 14px 14px;
 }
 .feedback-img-info-mfp > a {
 	border: 2px solid #009688;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
+	border-radius: 14px;
+	-webkit-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-moz-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-ms-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-o-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+}
+.feedback-img-info-mfp > a:hover {
+	background-color: rgb(0 150 136 / 10%);
 }
 .feedback-img-info-mfp > a > p {
 	background-color: #009688;
+	-webkit-border-radius: 0 0 14px 14px;
+	-moz-border-radius: 0 0 14px 14px;
+	-ms-border-radius: 0 0 14px 14px;
+	-o-border-radius: 0 0 14px 14px;
+	border-radius: 0 0 14px 14px;
 }
-
-/* .menu-feedback-toggle {
-	border: 2px solid #00bcd4;
-	-webkit-border-radius: 55px;
-	-moz-border-radius: 55px;
-	-ms-border-radius: 55px;
-	-o-border-radius: 55px;
-	border-radius: 55px;
-	display: inline-block;
-	perspective: 800px;
-	position: relative;
-	transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
-	transform-style: preserve-3d;
-}
-.menu-feedback-toggle > input[type="radio"] {
-	display: none;
-}
-.menu-feedback-toggle > #choice1:checked ~ #flap {
-	-webkit-transform: rotateY(-180deg);
-	-moz-transform: rotateY(-180deg);
-	-ms-transform: rotateY(-180deg);
-	-o-transform: rotateY(-180deg);
-	transform: rotateY(-180deg);
-}
-.menu-feedback-toggle > #choice1:checked ~ #flap > .menu-feedback-toggle-content {
-	-webkit-transform: rotateY(-180deg);
-	-moz-transform: rotateY(-180deg);
-	-ms-transform: rotateY(-180deg);
-	-o-transform: rotateY(-180deg);
-	transform: rotateY(-180deg);
-}
-.menu-feedback-toggle > #choice2:checked ~ #flap {
-	-webkit-transform: rotateY(0deg);
-	-moz-transform: rotateY(0deg);
-	-ms-transform: rotateY(0deg);
-	-o-transform: rotateY(0deg);
-	transform: rotateY(0deg);
-}
-.menu-feedback-toggle > label {
-	color: #00bcd4;
-	cursor: pointer;
-	display: inline-block;
-	margin-bottom: 0;
-	min-width: 135px;
-	padding: 15px;
-	font-family: "Ubuntu-Regular";
-	font-size: 1.6rem;
-	font-weight: normal;
-	text-align: center;
-}
-.menu-feedback-toggle > #flap {
-	-webkit-align-items: center;
-	align-items: center;
-	display: -webkit-flex;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	background-color: #00bcd4;
-	border-bottom-right-radius: 55px;
-	border-top-right-radius: 55px;
-	font-size: 1.6rem;
-	height: calc(100% + 0px * 2);
-	justify-content: center;
-	left: 50%; 
-	position: absolute;
-	top: calc( 0px - 0px);
-	transform-origin: left;
-	transform-style: preserve-3d;
-	-webkit-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-	-moz-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-	-ms-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-	-o-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-	transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
-	width: 50%;
-}
-.menu-feedback-toggle > #flap > .menu-feedback-toggle-content {
-	color: #ffffff;
-	font-family: "Ubuntu-Regular";
-	font-size: 2rem;
-	font-weight: normal;
-	transform-style: preserve-3d;
-	-webkit-transition: transform 0s linear .25s;
-	-moz-transition: transform 0s linear .25s;
-	-ms-transition: transform 0s linear .25s;
-	-o-transition: transform 0s linear .25s;
-	transition: transform 0s linear .25s;
-} */
 
 	/*------- Menu and Feedback Section Ends -------*/
 
