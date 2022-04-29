@@ -78,7 +78,7 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	font-family: "Ubuntu-Regular";
 	font-size: 1.6rem;
 	font-weight: normal;
-	height: 40px;
+	height: 44px;
 }
 .form-control-app + .placeholder {
 	color: #b7b7b7;
@@ -165,6 +165,7 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	-ms-border-radius: 55px;
 	-o-border-radius: 55px;
 	border-radius: 55px;
+	display: inline-block;
 	perspective: 800px;
 	position: relative;
 	transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
