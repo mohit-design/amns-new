@@ -44,12 +44,16 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 
 	/*------- Log In Section Starts -------*/
 
-.bg-log-in {
+.bg-log-in,
+.bg-menu-feedback-mfp,
+.bg-feedback-fp {
 	padding: 30px 15px;
 	position: relative;
 	z-index: 1;
 }
-.bg-log-in::after {
+.bg-log-in::after,
+.bg-menu-feedback-mfp::after,
+.bg-feedback-fp::after {
 	background: url("../images/log-in-banner.jpg") no-repeat top/cover;
 	content: "";
 	height: 100%;
@@ -60,9 +64,15 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	width: 100%;
 	z-index: -1;
 }
-.logo-log-in { margin-bottom: 30px; }
-.logo-log-in > a { display: inline-block; }
-.logo-log-in > a > img { width: 170px; }
+.logo-log-in,
+.logo-menu-feedback-mfp,
+.logo-feedback-fp { margin-bottom: 30px; }
+.logo-log-in > a,
+.logo-menu-feedback-mfp > a,
+.logo-feedback-fp > a { display: inline-block; }
+.logo-log-in > a > img,
+.logo-menu-feedback-mfp > a > img,
+.logo-feedback-fp > a > img { width: 170px; }
 .box-form-lp {
 	background-color: #ffffff;
 	-webkit-border-radius: 14px;
@@ -145,7 +155,7 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 }
 .btn-submit,
 .btn-skip {
-	background-color: #00bcd4;
+	background-color: #673ab7;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-ms-border-radius: 7px;
@@ -169,8 +179,8 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 }
 .btn-skip {
 	background-color: transparent;
-	border: 1px solid #00bcd4;
-	color: #00bcd4;
+	border: 1px solid #673ab7;
+	color: #673ab7;
 	margin-top: 15px;
 }
 
@@ -199,7 +209,7 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	text-align: center;
 }
 .menu-img-info-mfp > a {
-	border: 2px solid #00bcd4;
+	border: 2px solid #673ab7;
 	-webkit-border-radius: 14px;
 	-moz-border-radius: 14px;
 	-ms-border-radius: 14px;
@@ -212,10 +222,10 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
 }
 .menu-img-info-mfp > a:hover {
-	background-color: rgb(0 188 212 / 10%);
+	background-color: rgb(103 58 183 / 10%);
 }
 .menu-img-info-mfp > a > p {
-	background-color: #00bcd4;
+	background-color: #673ab7;
 	-webkit-border-radius: 0 0 14px 14px;
 	-moz-border-radius: 0 0 14px 14px;
 	-ms-border-radius: 0 0 14px 14px;
@@ -250,3 +260,119 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	/*------- Menu and Feedback Section Ends -------*/
 
 /*------- Menu and Feedback Page Ends -------*/
+
+/*------- Feedback Page Starts -------*/
+
+	/*------- Feedback Section Starts -------*/
+
+#msform > fieldset:not(:first-of-type) {
+    display: none;
+}
+.box-step-wizard-fp {
+	background-color: #673ab7;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
+	border-radius: 14px;
+	padding: 30px;
+}
+.box-step-wizard-heading-fp > h3 {
+	color: #ffffff;
+	font-family: "Ubuntu-Medium";
+	font-size: 2.2rem;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.form-control-app-feedback {
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
+textarea.form-control-app-feedback {
+	height: 170px;
+}
+textarea.form-control-app-feedback + .placeholder {
+	top: 15%;
+}
+.form-control-app-feedback + .placeholder {
+	color: #ffffff;
+}
+.label-input-placeholder > .form-control-app-feedback:focus + .placeholder,
+.label-input-placeholder > .form-control-app-feedback:valid + .placeholder {
+	background-color: #673ab7;
+}
+.btn-next {
+	background-color: #673ab7;
+}
+.btn-next,
+.btn-previous {
+	background-color: #673ab7;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	border: 0;
+	color: #f7f7f7;
+	float: right;
+	font-family: "Ubuntu-Regular";
+	font-size: 1.6rem;
+	height: 44px;
+	letter-spacing: 0.5px;
+	margin-top: 20px;
+	padding: 10px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	width: 140px;
+}
+.btn-previous {
+	background-color: #ffffff;
+	border: 1px solid #673ab7;
+	color: #673ab7;
+	margin-right: 10px;
+}
+.feedbaack-que-fp > h4 {
+	color: #f7f7f7;
+	font-family: "Ubuntu-Regular";
+	font-size: 1.8rem;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+.feedback-que-ans-fp {
+	border-bottom: 1px solid #ffffff40;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.ratings-listing-fp > li {
+	display: inline-block;
+	margin-right: 4px;
+}
+.ratings-listing-fp > li:last-child { margin-right: 0; }
+.ratings-listing-fp > li > a {
+	color: #f7f7f7;
+	font-size: 3rem;
+	opacity: 0.75;
+}
+.ratings-listing-fp > li.active > a,
+.ratings-listing-fp > li > a:hover {
+	opacity: 1;
+}
+.success-icon-fp > i {
+	color: #ffffff;
+	font-size: 14rem;
+	margin-bottom: 30px;
+}
+.success-message-fp > h4 {
+	color: #ffffff;
+	font-family: "Ubuntu-Regular";
+	font-size: 1.8rem;
+}
+
+	/*------- Feedback Section Ends -------*/
+
+/*------- Feedback Page Ends -------*/
