@@ -1,0 +1,57 @@
+@media only screen and (max-width: 767px) {
+
+/*------- Book Table Page Starts -------*/
+
+  /*------- Book Table Section Starts -------*/
+
+.bg-banner-ba-fw {
+  height: 100vh;
+  padding: 15px;
+  position: static;
+}
+.box-banner-ba {
+  position: static;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  width: auto;
+}
+.logo-ba > a > img { width: 150px; }
+
+  /*------- Book Table Section Ends -------*/
+
+/*------- Book Table Page Ends -------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*------- Book Table Page Starts -------*/
+
+  /*------- Book Table Section Starts -------*/
+
+.box-banner-ba { width: 85%; }
+.logo-ba > a > img { width: 150px; }
+
+  /*------- Book Table Section Ends -------*/
+
+/*------- Book Table Page Ends -------*/
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+/*------- Book Table Page Starts -------*/
+
+  /*------- Book Table Section Starts -------*/
+
+.box-banner-ba { width: 85%; }
+.logo-ba > a > img { width: 150px; }
+
+  /*------- Book Table Section Ends -------*/
+
+/*------- Book Table Page Ends -------*/
+
+}

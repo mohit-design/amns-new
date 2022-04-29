@@ -1,0 +1,249 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Ubuntu-Light"; src: url("../fonts/Ubuntu-Light.ttf"); }
+@font-face { font-family: "Ubuntu-Regular"; src: url("../fonts/Ubuntu-Regular.ttf"); }
+@font-face { font-family: "Ubuntu-Medium"; src: url("../fonts/Ubuntu-Medium.ttf"); }
+@font-face { font-family: "Ubuntu-Bold"; src: url("../fonts/Ubuntu-Bold.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 0.5px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.btn:focus,
+.btn:active:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	outline: 0;
+}
+
+/*------- Common CSS Ends -------*/
+
+/*------- Log In Page Starts -------*/
+
+	/*------- Log In Section Starts -------*/
+
+.bg-log-in {
+	padding: 30px 15px;
+}
+.logo-log-in { margin-bottom: 30px; }
+.logo-log-in > a { display: inline-block; }
+.logo-log-in > a > img { width: 170px; }
+.label-input-placeholder {
+	display: block;
+	margin-bottom: 20px;
+  position: relative;
+}
+.form-control,
+.form-control:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.form-control-app {
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #b7b7b7;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	color: #b7b7b7;
+	font-family: "Ubuntu-Regular";
+	font-size: 1.6rem;
+	font-weight: normal;
+	height: 40px;
+}
+.form-control-app + .placeholder {
+	color: #b7b7b7;
+	font-family: "Ubuntu-Regular";
+	font-size: 1.6rem;
+	font-weight: normal;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+.label-input-placeholder > .form-control-app + .placeholder {
+  left: 8px;
+  padding: 0 5px;
+}
+.label-input-placeholder > .form-control-app:focus {
+  border-color: #222;
+}
+.label-input-placeholder > .form-control-app:focus + .placeholder,
+.label-input-placeholder > .form-control-app:valid + .placeholder {
+  top: 0;
+  font-size: 1.4rem;
+  background: #fff;
+}
+.btn-submit,
+.btn-skip {
+	background-color: #00bcd4;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	border: 0;
+	color: #f7f7f7;
+	font-family: "Ubuntu-Regular";
+	font-size: 1.6rem;
+	height: 44px;
+	letter-spacing: 0.5px;
+	padding: 10px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	width: 100%;
+}
+.btn-skip {
+	background-color: transparent;
+	border: 1px solid #00bcd4;
+	color: #00bcd4;
+	margin-top: 10px;
+}
+.btn-ba:hover {
+	background-color: #f7f7f7;
+	color: #300f00;
+}
+.btn-ba:focus {
+	background-color: #910041;
+	color: #f7f7f7;
+}
+
+	/*------- Log In Section Ends -------*/
+
+/*------- Log In Page Ends -------*/
+
+/*------- Menu and Feedback Page Starts -------*/
+
+	/*------- Menu and Feedback Section Starts -------*/
+
+.menu-feedback-toggle {
+	border: 2px solid #00bcd4;
+	-webkit-border-radius: 55px;
+	-moz-border-radius: 55px;
+	-ms-border-radius: 55px;
+	-o-border-radius: 55px;
+	border-radius: 55px;
+	perspective: 800px;
+	position: relative;
+	transition: transform cubic-bezier(0, 0, 0.30, 2) .4s;
+	transform-style: preserve-3d;
+}
+.menu-feedback-toggle > input[type="radio"] {
+	display: none;
+}
+.menu-feedback-toggle > #choice1:checked ~ #flap {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.menu-feedback-toggle > #choice1:checked ~ #flap > .menu-feedback-toggle-content {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.menu-feedback-toggle > #choice2:checked ~ #flap {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+.menu-feedback-toggle > label {
+	color: #00bcd4;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 0;
+	min-width: 135px;
+	padding: 15px;
+	font-family: "Ubuntu-Regular";
+	font-size: 1.6rem;
+	font-weight: normal;
+	text-align: center;
+}
+.menu-feedback-toggle > #flap {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #00bcd4;
+	border-bottom-right-radius: 55px;
+	border-top-right-radius: 55px;
+	font-size: 1.6rem;
+	height: calc(100% + 0px * 2);
+	justify-content: center;
+	left: 50%; 
+	position: absolute;
+	top: calc( 0px - 0px);
+	transform-origin: left;
+	transform-style: preserve-3d;
+	-webkit-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+	-moz-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+	-ms-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+	-o-transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+	transition: transform cubic-bezier(0.4, 0, 0.2, 1) .5s;
+	width: 50%;
+}
+.menu-feedback-toggle > #flap > .menu-feedback-toggle-content {
+	color: #ffffff;
+	font-family: "Ubuntu-Regular";
+	font-size: 2rem;
+	font-weight: normal;
+	transform-style: preserve-3d;
+	-webkit-transition: transform 0s linear .25s;
+	-moz-transition: transform 0s linear .25s;
+	-ms-transition: transform 0s linear .25s;
+	-o-transition: transform 0s linear .25s;
+	transition: transform 0s linear .25s;
+}
+
+	/*------- Menu and Feedback Section Ends -------*/
+
+/*------- Menu and Feedback Page Ends -------*/
