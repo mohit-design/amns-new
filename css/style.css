@@ -46,14 +46,45 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 
 .bg-log-in {
 	padding: 30px 15px;
+	position: relative;
+	z-index: 1;
+}
+.bg-log-in::after {
+	background: url("../images/log-in-banner.jpg") no-repeat top/cover;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.05;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
 }
 .logo-log-in { margin-bottom: 30px; }
 .logo-log-in > a { display: inline-block; }
 .logo-log-in > a > img { width: 170px; }
+.box-form-lp {
+	background-color: #ffffff;
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	-ms-border-radius: 14px;
+	-o-border-radius: 14px;
+	border-radius: 14px;
+	-webkit-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-moz-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-ms-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	-o-box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	box-shadow: 8px 8px 30px 0 rgb(42 67 113 / 15%);
+	padding: 30px;
+}
 .label-input-placeholder {
 	display: block;
 	margin-bottom: 20px;
   position: relative;
+}
+.illustration-log-in > img {
+	margin: 0 auto 30px;
+	width: 200px;
 }
 .form-control,
 .form-control:focus {
@@ -140,15 +171,7 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	background-color: transparent;
 	border: 1px solid #00bcd4;
 	color: #00bcd4;
-	margin-top: 10px;
-}
-.btn-ba:hover {
-	background-color: #f7f7f7;
-	color: #300f00;
-}
-.btn-ba:focus {
-	background-color: #910041;
-	color: #f7f7f7;
+	margin-top: 15px;
 }
 
 	/*------- Log In Section Ends -------*/
@@ -159,7 +182,36 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 
 	/*------- Menu and Feedback Section Starts -------*/
 
-.menu-feedback-toggle {
+.menu-feedback-img-info-mfp {
+	margin-bottom: 20px;
+}
+.menu-feedback-img-info-mfp > a {
+	display: block;
+}
+.menu-feedback-img-info-mfp > a > img {
+	margin: 30px auto;
+}
+.menu-feedback-img-info-mfp > a > p {
+	color: #ffffff;
+	font-family: "Ubuntu-Regular";
+	font-size: 2.4rem;
+	padding: 5px 15px;
+	text-align: center;
+}
+.menu-img-info-mfp > a {
+	border: 2px solid #00bcd4;
+}
+.menu-img-info-mfp > a > p {
+	background-color: #00bcd4;
+}
+.feedback-img-info-mfp > a {
+	border: 2px solid #009688;
+}
+.feedback-img-info-mfp > a > p {
+	background-color: #009688;
+}
+
+/* .menu-feedback-toggle {
 	border: 2px solid #00bcd4;
 	-webkit-border-radius: 55px;
 	-moz-border-radius: 55px;
@@ -244,7 +296,7 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 	-ms-transition: transform 0s linear .25s;
 	-o-transition: transform 0s linear .25s;
 	transition: transform 0s linear .25s;
-}
+} */
 
 	/*------- Menu and Feedback Section Ends -------*/
 
