@@ -103,13 +103,14 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
   padding: 0 5px;
 }
 .label-input-placeholder > .form-control-app:focus {
-  border-color: #222;
+  border-color: #272727;
 }
 .label-input-placeholder > .form-control-app:focus + .placeholder,
 .label-input-placeholder > .form-control-app:valid + .placeholder {
-  top: 0;
+	background-color: #ffffff;
+	color: #272727;
   font-size: 1.4rem;
-  background: #fff;
+  top: 0;
 }
 .btn-submit,
 .btn-skip {
