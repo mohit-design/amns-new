@@ -290,6 +290,7 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 }
 textarea.form-control-app-feedback {
 	height: 170px;
+	padding: 10px 12px;
 }
 textarea.form-control-app-feedback + .placeholder {
 	top: 15%;
@@ -347,6 +348,11 @@ textarea.form-control-app-feedback + .placeholder {
 	border-bottom: 1px solid #ffffff40;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
+}
+.feedback-que-ans-fp:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 .ratings-listing-fp > li {
 	display: inline-block;
