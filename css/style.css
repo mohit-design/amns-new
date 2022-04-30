@@ -46,14 +46,16 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 
 .bg-log-in,
 .bg-menu-feedback-mfp,
-.bg-feedback-fp {
+.bg-feedback-fp,
+.bg-menu-fp {
 	padding: 30px 15px;
 	position: relative;
 	z-index: 1;
 }
 .bg-log-in::after,
 .bg-menu-feedback-mfp::after,
-.bg-feedback-fp::after {
+.bg-feedback-fp::after,
+.bg-menu-fp::after {
 	background: url("../images/log-in-banner.jpg") no-repeat top/cover;
 	content: "";
 	height: 100%;
@@ -66,13 +68,16 @@ a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz
 }
 .logo-log-in,
 .logo-menu-feedback-mfp,
-.logo-feedback-fp { margin-bottom: 30px; }
+.logo-feedback-fp,
+.logo-menu-fp { margin-bottom: 30px; }
 .logo-log-in > a,
 .logo-menu-feedback-mfp > a,
-.logo-feedback-fp > a { display: inline-block; }
+.logo-feedback-fp > a,
+.logo-menu-fp > a { display: inline-block; }
 .logo-log-in > a > img,
 .logo-menu-feedback-mfp > a > img,
-.logo-feedback-fp > a > img { width: 170px; }
+.logo-feedback-fp > a > img,
+.logo-menu-fp > a > img { width: 170px; }
 .box-form-lp {
 	background-color: #ffffff;
 	-webkit-border-radius: 14px;
@@ -382,3 +387,139 @@ textarea.form-control-app-feedback + .placeholder {
 	/*------- Feedback Section Ends -------*/
 
 /*------- Feedback Page Ends -------*/
+
+/*------- Menu Page Starts -------*/
+
+	/*------- Menu Button Section Starts -------*/
+
+.fixed-menu-button {
+  bottom: 50px;
+  left: 50%;
+  position: fixed;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.btn-open-menu {
+  background-color: #009688;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  color: #ffffff;
+  font: 1.6rem/normal "Ubuntu-Regular";
+  padding: 10px 25px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.btn-open-menu > i {
+  padding-right: 10px;
+}
+.btn-open-menu:hover,
+.btn-open-menu:focus {
+  color: #ffffff;
+}
+
+	/*------- Menu Button Section Ends -------*/
+
+	/*------- Accordion Menu Section Starts -------*/
+
+.fixed-accordion-menu {
+  background-color: #009688;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  left: 50%;
+  opacity: 0;
+  padding: 30px;
+  position: fixed;
+  bottom: 175px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  visibility: hidden;
+  z-index: 10;
+}
+.fixed-accordion-menu.active {
+  bottom: 150px;
+  opacity: 1;
+  visibility: visible;
+}
+.accordion-menu-listing > li {
+  display: block;
+  margin-bottom: 10px;
+}
+.accordion-menu-listing > li:last-child {
+  margin-bottom: 0;
+}
+.accordion-menu-listing > li > a {
+  color: #ffffff;
+  display: block;
+  font: 1.6rem/1.4 "Ubuntu-Regular";
+  position: relative;
+}
+.accordion-menu-listing > li.active > a,
+.accordion-menu-listing > li > a:hover {
+  color: #000000;
+}
+
+	/*------- Accordion Menu Section Ends -------*/
+
+	/*------- Menu Section Starts -------*/
+
+.accordion-1 > h4 { border: 1px solid #2196f3; border-bottom: 0; color: #2196f3; cursor: pointer; font-family: "Ubuntu-Medium"; font-size: 1.8rem; position: relative; }
+.accordion-1 > h4:last-of-type { border-bottom: 1px solid #2196f3; }
+.accordion-1 > h4::after {
+	content: "\f067";
+	display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.accordion-1 > h4.active::after {
+	content: "\f068";
+}
+.accordion-1 > h4.active { border: 1px solid #2196f3; background-color: #2196f3; color: #fff; }
+.accordion-1 > h4 > span { display: block; padding: 10px 15px; }
+.accordion-1 > div { background-color: #ffffff; border: 1px solid #2196f3; border-bottom: 0; padding: 10px; }
+.accordion-1 > div:last-child { border-bottom: 1px solid #2196f3; }
+.accordion-1 > div > p { color: #272727; font-family: "Ubuntu-Regular"; }
+.accordion-1 > div > p + ul,
+.accordion-1 > div > p + ul ~ p { margin-top: 10px; }
+.terms-conditions-listing > li { color: #272727; font-family: "Ubuntu-Regular"; font-size: 1.6rem; margin-bottom: 10px; padding-left: 20px; position: relative; }
+.terms-conditions-listing > li:last-child { margin-bottom: 0; }
+.terms-conditions-listing > li::before {
+  background-color: #2196f3;
+  content: "";
+	display: block;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 10px;
+  z-index: 1;
+}
+
+	/*------- Menu Section Ends -------*/
+
+/*------- Menu Page Ends -------*/
