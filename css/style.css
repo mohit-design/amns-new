@@ -506,18 +506,45 @@ textarea.form-control-app-feedback + .placeholder {
 .accordion-1 > div > p { color: #272727; font-family: "Ubuntu-Regular"; }
 .accordion-1 > div > p + ul,
 .accordion-1 > div > p + ul ~ p { margin-top: 10px; }
-.terms-conditions-listing > li { color: #272727; font-family: "Ubuntu-Regular"; font-size: 1.6rem; margin-bottom: 10px; padding-left: 20px; position: relative; }
+.terms-conditions-listing > li { color: #272727; font-family: "Ubuntu-Regular"; font-size: 1.6rem; margin-bottom: 0; padding-bottom: 10px; padding-left: 20px; position: relative; z-index: 1; }
+.terms-conditions-listing > li > span {
+	color: #2196f3;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
 .terms-conditions-listing > li:last-child { margin-bottom: 0; }
 .terms-conditions-listing > li::before {
-  background-color: #2196f3;
+  background-color: #f7f7f7;
   content: "";
 	display: block;
-  height: 10px;
+  height: 100%;
   left: 0;
   position: absolute;
   top: 7px;
   width: 10px;
   z-index: 1;
+}
+.terms-conditions-listing > li::after {
+	background-color: #f7f7f7;
+	border: 1px solid #2196f3;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 10px;
+	left: 0;
+	position: absolute;
+	top: 7px;
+	width: 10px;
+	z-index: 1;
+}
+.terms-conditions-listing > li:last-child::before {
+	height: 0;
 }
 
 	/*------- Menu Section Ends -------*/
